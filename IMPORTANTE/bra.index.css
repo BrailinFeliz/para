@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+   font-size: 15px;
+}
+
+body{
+   font-family:sans-serif;
+   margin: 0;
+   color: black;
+   position: relative;
+   display: grid;
+   min-height: 100vh;
+   grid-auto-rows: auto 1fr auto;
+}
+
+a{
+   text-decoration: none;
+   color: black;
+
+}
+
+                                  /*Comienso del header*/
+
+header{
+   display: flex;
+   min-height: 70px;
+   background-color: coral;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px;
+  }
+
+.logo{
+     display: flex;
+     align-items: center;
+  }
+
+.logo img{
+     height: 50px; 
+     margin-right: 10px;   
+   }
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;   
+}
+
+nav a:hover{
+   color: white;
+}
+
+@media (max-width:700px){
+   header{
+      flex-direction: column; 
+   }
+
+   nav{
+      padding: 10px 0px;
+   }
+}
+                        /*Final del header*/
+
+      
+
+                        /*Los textos*/
+p{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+    text-align: left;
+    text-align: justify;
+    padding: 15pt;
+}
+
+li{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 1.3rem;
+   font-weight: normal;
+   text-align: left;
+   text-align: justify;
+}
+
+h1{
+    color: rgb(92, 159, 215);
+    padding: 20px;
+    font-size: 2.6rem;
+}
+
+
+                                 /*Final de Los textos*/
+
+
+.galeria{ 
+    display: flex; /* este es el diaplay de flex*/
+     width: 100%; /*este es el ancho de % */
+     margin: 0 auto; /*este es el margen en auto */
+
+}
+
+.columna{ 
+    display: grid; /*este es el display de grid*/
+    grid-template-columns: repeat(4, 306px);/*este es el ancho de las columnas*/
+    grid-gap: 10px; /*este es el espacion entre columna*/
+    
+}
+
+.card{
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-self: center;
+   padding: 20px;
+   border: 1px solid white;
+   margin-bottom: 10px;
+
+}
+
+.img{
+  width: 100%;
+  height: 30px;
+  opacity: 0.8;
+  cursor: pointer;
+
+}
+
+nav{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: row;
+}
+
+
+                              /*Final de Los textos*/
+.footer{
+   background-color: coral;
+   padding: 1em 0;
+   text-align: center;
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   margin-top: auto;
+}
+
